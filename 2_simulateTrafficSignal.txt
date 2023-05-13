@@ -1,0 +1,31 @@
+package com;
+
+public class Box {
+
+	public static void main(String[] args) {
+    char color = 'Y';
+    printMessage(color);
+		
+	}
+	
+	public static void printMessage(char color)
+	{
+       switch(color)
+       {
+       case 'R':
+    	   System.out.println("Stop");
+    	   break;
+       case 'Y':
+    	   System.out.println("Ready");
+    	   break;
+       case 'G':
+    	   System.out.println("Go");
+    	   break;
+       default:
+    	   System.out.println("Default");
+       }
+		
+		
+	}
+	
+}

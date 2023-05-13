@@ -1,0 +1,37 @@
+package com;
+
+public class Box {
+
+	public static void main(String[] args) {
+    int n = 234;
+    printSum(n);
+		
+	}
+	
+	public static void printSum(int n)
+	{
+		int firstDigit = 0;
+		int secondDigit = 0;
+		int thirdDigit = 0;
+		int sum = 0;
+		firstDigit = n/100%10;
+		secondDigit = n/10%10;
+		thirdDigit = n%10;
+		System.out.println(firstDigit);
+		System.out.println(secondDigit);
+		System.out.println(thirdDigit);
+		
+		int result = getCube(firstDigit) + getCube(secondDigit) + getCube(thirdDigit);
+		
+		//sum = firstDigit+secondDigit+thirdDigit;
+		System.out.println("Sum- "+ result);
+		
+		
+	}
+	
+	public static int getCube(int n)
+	{
+		return n*n*n;
+	}
+	
+}
